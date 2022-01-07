@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 
+    <script src="registrationform.js" defer></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group mt-5">
+                <div class="row">
+                    <div class="col"><h1>Registration Form</h1></div>
+                </div><br>
+                <div class="row">
+                    <div class="col col-md-1">
+                        <label class="form-label">Name</label>
+                    </div>
+                    <div class="col col-md-4"><input type="text" class="form-control" id="sname"></div>
+                    <div class="col col-md-3">
+                        <p id="nameid"></p>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col col-md-1">
+                        <label class="form-label">Password</label>
+                    </div>
+                    <div class="col col-md-4">
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="col col-md-3">
+                        <p id="passid"></p>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col col-md-1">
+                        <label class="form-label">Branch</label>
+                    </div>
+                    <div class="col col-md-1">
+                        <select class="form-select" id="sel">
+                            <option selected disabled value="Branch">Branch</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="MECH">MECH</option>
+                            <option value="CIVIL">CIVIL</option>
+                        </select>
+                    </div>
+                    <div class="col colmd-3">
+                        <p id="branch"></p>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col col-md-1">
+                        <label class="form-label">Gender</label>
+                    </div>
+                    <div class="form-check col-md-1">
+                        <input type="radio" id="male" class="form-check-input" name="gender">
+                        <label class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check col-md-1">
+                        <input type="radio" id="female" class="form-check-input" name="gender">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                    <div class="form-check col-md-1">
+                        <input type="radio" id="other" class="form-check-input" name="gender">
+                        <label class="form-check-label">other</label>
+                    </div>
+                    <div class="col col-md-3">
+                        <p id="gid"></p>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col col-md-1"><label class="form-label">Interests</label></div>
+                    <div class="form-check col-md-1">
+                        <input type="checkbox" id="ch1" class="form-check-input">
+                        <label class="form-check-label">Music</label>
+                    </div>
+                    <div class="form-check col-md-1">
+                        <input type="checkbox" id="ch2" class="form-check-input">
+                        <label class="form-check-label">Sports</label>
+                    </div>
+                    <div class="form-check col-md-2">
+                        <input type="checkbox" id="ch3" class="form-check-input">
+                        <label class="form-check-label">Entrepreneurship</label>
+                    </div>
+                    <div class="col col-md-3">
+                        <p id="interests"></p>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-secondary" id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
